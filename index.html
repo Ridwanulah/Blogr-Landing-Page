@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogr — A modern publishing platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <!-- Desktop Navbar -->
+        <nav class="navbar">
+            <a class="logo" href="#">Blogr</a>
+
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <button id="btn-product" aria-expanded="false">Product</button>
+                    <div class="dropdown" id="dd-product">
+                        <a href="#">Overview</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Marketplace</a>
+                        <a href="#">Features</a>
+                        <a href="#">Integrations</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="btn-company" aria-expanded="false">Company</button>
+                    <div class="dropdown" id="dd-company">
+                        <a href="#">About</a>
+                        <a href="#">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="btn-connect" aria-expanded="false">Connect</button>
+                    <div class="dropdown" id="dd-connect">
+                        <a href="#">Contact</a>
+                        <a href="#">Newsletter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-auth">
+                <a href="#">Login</a>
+                <a href="#" class="btn btn-signup">Sign Up</a>
+            </div>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation">
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-trigger" data-target="m-dd-product">Product</button>
+                <div class="mobile-dropdown" id="m-dd-product">
+                    <a href="#">Overview</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Features</a>
+                    <a href="#">Integrations</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-trigger" data-target="m-dd-company">Company</button>
+                <div class="mobile-dropdown" id="m-dd-company">
+                    <a href="#">About</a>
+                    <a href="#">Team</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-trigger" data-target="m-dd-connect">Connect</button>
+                <div class="mobile-dropdown" id="m-dd-connect">
+                    <a href="#">Contact</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <hr class="mobile-nav-divider" />
+            <div class="mobile-nav-auth">
+                <a href="#">Login</a>
+                <a href="#" class="btn mobile-btn-signup">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <h1>A modern publishing<br>platform</h1>
+            <p>Grow your audience and build your online brand wherever your readers come from.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn btn-primary">Start for Free</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== SECTION: DESIGNED FOR THE FUTURE ===== -->
+    <section class="section-future">
+        <h2 class="fade-in">Designed for the future</h2>
+        <div class="features-grid">
+            <div class="features-text">
+                <div class="feature fade-in">
+                    <h3>Introducing an extensible editor</h3>
+                    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility
+                        with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                </div>
+                <div class="feature fade-in">
+                    <h3>Robust content management</h3>
+                    <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customised categories, sections, format, or flow. With this functionality, you're in full control.</p>
+                </div>
+            </div>
+            <div class="features-illustration fade-in">
+                <!-- Phones SVG illustration -->
+                <svg class="phones-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Phone 1 (back) -->
+          <rect x="260" y="60" width="160" height="310" rx="20" ry="20" fill="#1f3a5f" opacity="0.9"/>
+          <rect x="270" y="80" width="140" height="240" rx="8" fill="#e8eef5"/>
+          <rect x="275" y="90" width="130" height="30" rx="4" fill="#4a90c4" opacity="0.5"/>
+          <rect x="275" y="128" width="130" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="275" y="142" width="100" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="275" y="156" width="115" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="275" y="175" width="130" height="60" rx="6" fill="#c8dae8" opacity="0.6"/>
+          <rect x="275" y="242" width="80" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="275" y="256" width="130" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="275" y="270" width="110" height="8" rx="4" fill="#aab8c8"/>
+          <circle cx="340" cy="340" r="10" fill="#8faaba"/>
+          <!-- Phone 2 (front) -->
+          <rect x="120" y="100" width="170" height="330" rx="22" ry="22" fill="#1f3a5f"/>
+          <rect x="132" y="122" width="146" height="260" rx="8" fill="#e8eef5"/>
+          <circle cx="205" cy="115" r="5" fill="#8faaba"/>
+          <rect x="138" y="130" width="134" height="30" rx="4" fill="url(#phoneGrad)"/>
+          <rect x="138" y="168" width="134" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="138" y="182" width="100" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="138" y="198" width="134" height="70" rx="6" fill="#c8dae8" opacity="0.5"/>
+          <rect x="138" y="275" width="90" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="138" y="289" width="134" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="138" y="303" width="110" height="8" rx="4" fill="#aab8c8"/>
+          <rect x="138" y="320" width="70" height="24" rx="12" fill="#ff6b7a"/>
+          <circle cx="205" cy="390" r="12" fill="#8faaba"/>
+          <defs>
+            <linearGradient id="phoneGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ff8f6b"/>
+              <stop offset="100%" stop-color="#ff525d"/>
+            </linearGradient>
+          </defs>
+        </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION: INFRASTRUCTURE ===== -->
+    <section class="section-infra">
+        <div class="infra-illustration fade-in">
+            <!-- Globe SVG -->
+            <svg class="svg-container" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="240" cy="240" r="200" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+        <circle cx="240" cy="240" r="155" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+        <circle cx="240" cy="240" r="108" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+        <circle cx="240" cy="240" r="60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+        <!-- Globe body -->
+        <circle cx="240" cy="240" r="130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <ellipse cx="240" cy="240" rx="60" ry="130" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <line x1="110" y1="240" x2="370" y2="240" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <line x1="240" y1="110" x2="240" y2="370" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <ellipse cx="240" cy="240" rx="130" ry="45" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+        <!-- Dots on globe -->
+        <circle cx="170" cy="200" r="6" fill="white" opacity="0.9"/>
+        <circle cx="300" cy="210" r="5" fill="white" opacity="0.7"/>
+        <circle cx="250" cy="290" r="7" fill="white" opacity="0.8"/>
+        <circle cx="340" cy="260" r="4" fill="white" opacity="0.6"/>
+        <circle cx="190" cy="270" r="5" fill="white" opacity="0.75"/>
+        <!-- Connection lines -->
+        <line x1="170" y1="200" x2="300" y2="210" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="300" y1="210" x2="250" y2="290" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="250" y1="290" x2="340" y2="260" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="170" y1="200" x2="190" y2="270" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+        <!-- Large rocket -->
+        <g transform="translate(355,130) rotate(-30)">
+          <ellipse cx="0" cy="0" rx="18" ry="45" fill="white" opacity="0.95"/>
+          <polygon points="0,-55 -18,-10 18,-10" fill="white" opacity="0.85"/>
+          <polygon points="-18,30 -30,55 0,40" fill="#ff6b7a" opacity="0.9"/>
+          <polygon points="18,30 30,55 0,40" fill="#ff6b7a" opacity="0.9"/>
+          <circle cx="0" cy="-5" r="10" fill="#1e3251" opacity="0.9"/>
+          <circle cx="0" cy="-5" r="6" fill="#4a9ed4" opacity="0.8"/>
+          <ellipse cx="0" cy="50" rx="12" ry="20" fill="rgba(255,150,80,0.5)" filter="url(#flame)"/>
+        </g>
+        <defs>
+          <filter id="flame">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+          </filter>
+        </defs>
+      </svg>
+        </div>
+        <div class="infra-text fade-in">
+            <h2>State of the Art Infrastructure</h2>
+            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+    </section>
+
+    <!-- ===== SECTION: FREE & OPEN ===== -->
+    <section class="section-free">
+        <div class="free-grid">
+            <div class="free-illustration fade-in">
+                <!-- Laptop SVG -->
+                <svg class="free-laptop-img" viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Laptop base -->
+          <rect x="60" y="60" width="360" height="240" rx="14" fill="#1f3a5f"/>
+          <rect x="74" y="74" width="332" height="210" rx="6" fill="#e8eef5"/>
+          <!-- Screen content -->
+          <rect x="82" y="82" width="316" height="40" rx="4" fill="url(#laptopGrad)"/>
+          <rect x="90" y="92" width="60" height="12" rx="3" fill="rgba(255,255,255,0.8)"/>
+          <circle cx="360" cy="98" r="7" fill="rgba(255,255,255,0.5)"/>
+          <circle cx="376" cy="98" r="7" fill="rgba(255,255,255,0.5)"/>
+          <circle cx="392" cy="98" r="7" fill="rgba(255,255,255,0.5)"/>
+          <rect x="82" y="128" width="316" height="10" rx="4" fill="#c8d8e8"/>
+          <rect x="82" y="144" width="250" height="10" rx="4" fill="#c8d8e8"/>
+          <rect x="82" y="162" width="316" height="80" rx="6" fill="#dce8f0" opacity="0.8"/>
+          <rect x="90" y="172" width="180" height="10" rx="4" fill="#b0c4d8"/>
+          <rect x="90" y="188" width="220" height="10" rx="4" fill="#b0c4d8"/>
+          <rect x="90" y="204" width="160" height="10" rx="4" fill="#b0c4d8"/>
+          <rect x="90" y="222" width="200" height="10" rx="4" fill="#b0c4d8"/>
+          <rect x="82" y="252" width="80" height="26" rx="13" fill="#ff6b7a"/>
+          <rect x="172" y="252" width="100" height="26" rx="13" fill="none" stroke="#1f3a5f" stroke-width="2"/>
+          <rect x="82" y="252" width="316" height="1" rx="0" fill="transparent"/>
+          <!-- Laptop bottom -->
+          <rect x="30" y="300" width="420" height="24" rx="5" fill="#1a3050"/>
+          <rect x="180" y="292" width="120" height="10" rx="5" fill="#1a3050"/>
+          <!-- Notepads / cards floating -->
+          <rect x="360" y="160" width="140" height="110" rx="10" fill="white" opacity="0.95" filter="url(#shadow)"/>
+          <rect x="372" y="172" width="116" height="10" rx="4" fill="#c8d8e8"/>
+          <rect x="372" y="188" width="90" height="10" rx="4" fill="#c8d8e8"/>
+          <rect x="372" y="204" width="116" height="10" rx="4" fill="#c8d8e8"/>
+          <rect x="372" y="224" width="60" height="22" rx="11" fill="url(#laptopGrad)"/>
+          <defs>
+            <linearGradient id="laptopGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ff8f6b"/>
+              <stop offset="100%" stop-color="#ff525d"/>
+            </linearGradient>
+            <filter id="shadow">
+              <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.15)"/>
+            </filter>
+          </defs>
+        </svg>
+            </div>
+
+            <div class="free-text">
+                <div class="feature fade-in">
+                    <h3>Free, open, simple</h3>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code blocks, GitHub flavored Markdown, and leave it to its well-documented, versatile API.</p>
+                </div>
+                <div class="feature fade-in">
+                    <h3>Powerful tooling</h3>
+                    <p>Batteries included. We built a simple and straightforward CLI tool that makes customisation and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <span class="footer-logo">Blogr</span>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">Integrations</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
